@@ -1,0 +1,92 @@
+/* All */
+
+
+/* Html */
+
+
+/* Body */
+body
+{
+    margin: 0;
+}
+
+/* Header */
+header
+{
+    background-position: fixed;
+    background-image: url("OmnifoodContent/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: sans-serif;
+}
+
+header h1
+{
+    font-weight: 100;
+}
+
+/* Nav */
+nav
+{
+    margin-bottom: 100px;
+}
+nav ul
+{
+    float: right;
+    padding-left: 0px;
+    list-style: none;
+}
+nav li
+{
+    display: inline; margin: 10px;
+    padding-bottom: 10px;
+}
+nav li
+{
+    border-bottom: 2px transparent solid;
+}
+
+/* Normal */
+button
+{
+    border: solid darkorange 2px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: darkorange;
+    margin: 20px;
+    padding: 10px 20px;
+    transition: 0.1s;
+}
+
+/* Classes */
+.backTint
+{
+    padding: 25px 50px;
+    background-color: rgba(50, 50, 50, 0.75);
+}
+.buttonPrimary
+{
+    background-color: orange;
+    border-color: orange;
+    color: white;
+}
+
+/* Ids */
+#heroText
+{
+    margin-bottom: 100px;
+}
+
+/* Psudo */
+button:hover
+{
+    color: white;
+    background-color: darkorange;
+    border-color: darkorange;
+}
+nav li:hover
+{
+    border-bottom-color: orange;
+}
