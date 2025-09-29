@@ -1,3 +1,11 @@
+/* FlexBox */
+.flex1{width: 100%; display: flex;}
+.flex2{width: 50%; display: flex;}
+.flex4{width: 25%; display: flex;}
+.flex5{width: 20%; display: flex;}
+[class*="flex"]{margin: 2.5%; float: left; padding: 5px; flex-wrap: nowrap; display: block;}
+.flexDiv{width: 100%; margin: 0; display: flex; justify-content: center;}
+
 /* All */
 
 
@@ -48,6 +56,31 @@ nav li
     border-bottom: 2px transparent solid;
 }
 
+/* Section */
+section
+{
+    font-family: sans-serif;
+}
+section .headDiv
+{
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+section h2
+{
+    font-weight: 100;
+}
+section h3
+{
+    font-weight: 100;
+    text-align: left;
+}
+section p
+{
+    text-align: left;
+}
+
 /* Normal */
 button
 {
@@ -72,11 +105,41 @@ button
     border-color: orange;
     color: white;
 }
+.iconBig
+{
+    font-size: 350%;
+    display: block;
+    color: orangered;
+    margin-bottom: 10px;
+    --ionicon-stroke-width: 20px;
+}
+.sectionMargin
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.backgroundImg
+{
+    outline: white 1px solid;
+    overflow: hidden;
+    background-color: black;
+}
+.backgroundImg img
+{
+    display: block;
+    opacity: 0.7;
+    transition: 0.5s;
+}
 
 /* Ids */
 #heroText
 {
     margin-bottom: 100px;
+}
+#Gallery *, #Gallery
+{
+    margin: 0px;
+    padding: 0;
 }
 
 /* Psudo */
@@ -89,4 +152,9 @@ button:hover
 nav li:hover
 {
     border-bottom-color: orange;
+}
+.backgroundImg img:hover
+{
+    transform: scale(1.15);
+    opacity: 1;
 }
