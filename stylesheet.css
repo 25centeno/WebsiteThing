@@ -15,6 +15,7 @@
 /* Body */
 body
 {
+    overflow-x: hidden;
     margin: 0;
 }
 
@@ -92,6 +93,10 @@ button
     padding: 10px 20px;
     transition: 0.1s;
 }
+a
+{
+    color: orangered;
+}
 
 /* Classes */
 .backTint
@@ -115,8 +120,8 @@ button
 }
 .sectionMargin
 {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .backgroundImg
 {
@@ -129,6 +134,21 @@ button
     display: block;
     opacity: 0.7;
     transition: 0.5s;
+}
+.circle
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+    font-size: x-large;
+    text-align: center;
+    color: orangered;
+    display: block;
+    border: orangered 2px solid;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 100px;
+    padding: 15px 20px 25px 20px;
 }
 
 /* Ids */
@@ -157,4 +177,9 @@ nav li:hover
 {
     transform: scale(1.15);
     opacity: 1;
+}
+a:hover
+{
+    color: black;
+    text-decoration: none;
 }
