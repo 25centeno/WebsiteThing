@@ -103,6 +103,59 @@ blockquote a
     font-family: fantasy;
     font-size: xx-large;
 }
+input[type=text], input[type=email], select, textarea
+{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid rgb(225, 225, 225);
+}
+input[type=checkbox]
+{
+    margin: 10px 5px 10px 0px;
+}
+input[type=submit]
+{
+    border: solid orange 2px;
+    border-radius: 20px;
+    background-color: orange;
+    color: white;
+    margin: 20px;
+    padding: 10px 20px;
+    transition: 0.1s;
+}
+textarea
+{
+    height: 100px;
+    resize: none;
+}
+form *
+{
+    font-family: sans-serif;
+}
+footer
+{
+    text-align: center;
+    background-color: rgba(50, 50, 50, 1);
+    height: 100px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: sans-serif;
+}
+footer p
+{
+    margin-top: 50px;
+    color:  grey;
+}
+footer ion-icon
+{
+    margin-top: -10px;
+    color: gray;
+    transition: 0.3s;
+}
+
 
 /* Classes */
 .backTint
@@ -184,6 +237,22 @@ blockquote a
 {
     font-size: large;
 }
+.floatLeft
+{
+    float: left;
+}
+.floatLeft *
+{
+    padding: 10px;
+}
+.floatRight
+{
+    float: right;
+}
+.floatRight *
+{
+    padding: 10px;
+}
 
 /* Ids */
 #heroText
@@ -235,4 +304,34 @@ a:link:hover
 {
     color: black;
     text-decoration: none;
+}
+form *:focus
+{
+    outline: none;
+}
+footer a:link
+{
+    color: grey;
+    text-decoration: none;
+    transition: 0.3s;
+}
+footer a:link:hover
+{
+    color: lightgrey;
+}
+#facebook:hover
+{
+    color: darkblue;
+}
+#twitter:hover
+{
+    color: darkcyan;
+}
+#google:hover
+{
+    color: darkred;
+}
+#instagram:hover
+{
+    color: darkmagenta;
 }
