@@ -1,6 +1,7 @@
 /* FlexBox */
 .flex1{width: 100%; display: flex;}
 .flex2{width: 50%; display: flex;}
+.flex3{width: 33.33%; display: flex;}
 .flex4{width: 25%; display: flex;}
 .flex5{width: 20%; display: flex;}
 [class*="flex"]{margin: 2.5%; float: left; padding: 5px; flex-wrap: nowrap; display: block;}
@@ -93,9 +94,14 @@ button
     padding: 10px 20px;
     transition: 0.1s;
 }
-a
+blockquote
 {
-    color: orangered;
+    font-style: italic;
+}
+blockquote a
+{
+    font-family: fantasy;
+    font-size: xx-large;
 }
 
 /* Classes */
@@ -145,10 +151,38 @@ a
     color: orangered;
     display: block;
     border: orangered 2px solid;
-    width: 2vw;
-    height: 2vw;
+    width: 20px;
+    height: 20px;
     border-radius: 100px;
     padding: 15px 20px 25px 20px;
+}
+.circle2
+{
+    margin-left: 40px;
+    margin-right: 10px;
+    float: left;
+    font-size: x-large;
+    text-align: center;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+}
+.iconSmall
+{
+    color: orangered;
+}
+.bigtext, .smalltext
+{
+    color: orangered;
+}
+.bigtext
+{
+    font-size: xx-large;
+}
+.smalltext
+{
+    font-size: large;
 }
 
 /* Ids */
@@ -160,6 +194,21 @@ a
 {
     margin: 0px;
     padding: 0;
+}
+#contentImage
+{
+    background-image: url("OmnifoodContent/back-customers.jpg");
+    background-position: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: sans-serif;
+}
+section .backTint
+{
+    margin-top: -50px;
+    height: 450px;
 }
 
 /* Psudo */
@@ -178,7 +227,11 @@ nav li:hover
     transform: scale(1.15);
     opacity: 1;
 }
-a:hover
+a:link
+{
+    color: orangered;
+}
+a:link:hover
 {
     color: black;
     text-decoration: none;
